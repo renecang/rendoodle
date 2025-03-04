@@ -1,0 +1,196 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+
+	
+}
+
+#square {
+	height: 200px;
+	width: 200px;
+	background-color: red;
+	position: absolute;
+	top: 30%;
+	right: 60%;
+  }
+
+#square:hover {
+	background-color: green;
+}
+
+#circle {
+ 	height: 150px;
+ 	width: 150px;
+  	background-color: orange;
+  	border-radius: 50%;
+  	position: absolute;
+  	top: 35%;
+	right: 35%;
+	transition: all 2s;
+}
+
+#circle:hover {
+	transform: scale(0.5,0.5);
+}
+
+#rectangle {
+	height: 50px;
+	width: 1000px;
+	background-color: yellow;
+	position: absolute;
+	top: 80%;
+	right: 25%;
+	z-index: 2;
+	transition: top 1s, background-color 5s;
+  }
+
+#rectangle:hover {
+	top: 85%;
+	background-color: blue;
+}
+
+#triangleU {
+	width: 0;
+	height: 0;
+	border-left: 550px solid transparent;
+	border-right: 550px solid transparent;
+	border-bottom: 150px solid gold;
+	position: absolute;
+	top: 5%;
+	right: 25%;
+	z-index: 2;
+	transition: all 1s;
+}
+
+#triangleU:hover {
+	border-left: 850px solid transparent;
+	border-right: 850px solid transparent;
+	right: 10%;
+}
+
+#oval {
+	height: 50px;
+	width: 100px;
+	background-color: green;
+	border-radius: 50%;
+	position: absolute;
+	top: 67%;
+	right: 40%;
+	transition: all 3s;
+  }
+
+#oval:hover {
+	right: 60%;
+}
+
+#trapezoid {
+	border-bottom: 50px solid blue;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 1000px;
+	position: absolute;
+	top: 75%;
+	right: 24%;
+	z-index: 3;
+	transition: all 1s;
+}
+
+#trapezoid:hover {
+	top: 70%;
+}
+
+#triangleR {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 500px solid indigo;
+	border-bottom: 25px solid transparent;
+	position: absolute;
+	top: 30%;
+	right: 25%;
+	transition: all 1s;
+}
+
+#triangleR:hover {
+	transform: rotate(90deg);
+}
+
+#triangleL {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid violet;
+	border-bottom: 25px solid transparent;
+	position: absolute;
+	top: 30%;
+	right: 75%;
+	transition: all 20s;
+}
+
+#triangleL:hover {
+	border-top: 2500px solid transparent;
+	border-right: 5000px solid violet;
+	border-bottom: 2500px solid transparent;
+}
+
+#triangleD {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid Black;
+	position: absolute;
+	top: 20%;
+	right: 40%;
+	z-index: 1;
+}
+
+#triangleD:hover {
+	top: 15%;
+}
+
+#parallelogram {
+	width: 400px;
+	height: 125px;
+	transform: skew(20deg);
+	background-color: Gray;
+	position: absolute;
+	top: 85%;
+	right: 40%;
+	z-index: 1;
+	transition: 10s;
+}
+
+#parallelogram:hover {
+	right: -5%;
+	width: 2100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
