@@ -1,0 +1,66 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+.column {
+    padding: 0px;
+    padding-top: 0px;
+}
+
+.column.left {
+    float: left;
+    width: 20%;
+    height: 100vh;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 100px;
+    
+    
+}
+
+.column.right {
+    
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+    background-color: #031530;
+    color: #173c73;
+    font-family: oswald, sans-serif;
+   
+	
+}
+
+h2{
+  text-align: center;
+  font-size: 500%;
+}
+
+h3{
+  position: relative;
+  top: 30vh;
+  transform: rotate(-90deg);
+  font-size: 1500%;
+  
+}
+
+footer{
+    text-align: right;
+    padding-right: 100px;
+}
+
+
+
+
+
