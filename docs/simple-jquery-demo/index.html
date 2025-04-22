@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>Very Confusing</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+    <link rel="stylesheet" href="https://use.typekit.net/xli3ehi.css"
+    >
+    <link rel="stylesheet" href="https://use.typekit.net/xli3ehi.css">
+	
+</head>
+
+
+<body>
+
+  <div id="container">
+
+<header>
+<h1>What is happening?</h1>
+<h2>I'm Confused</h2>
+</header>
+
+<main>
+    
+    <div class="buttons">
+        <button class="kuma"> Do Not Click </button>
+        <button class="lilo"> Do Not Do It </button>
+        <button class="chewy"> You Can Click This One </button>
+    </div>
+
+
+<p id="woah">Why did you click the button?</p>
+    
+<p id="hidden">What were you expecting?</p>
+       
+<img src="image/export%20(3).png">
+
+</main>
+
+
+
+  </div><!-- close "container" -->
+  
+  
+  <!-- Paste the jQuery starter code below here -->
+    
+      <!-- Link to jQuery on Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+
+<script>
+$('p#woah').hide();
+$('p#hidden').hide();
+$('img').hide();
+    
+  $(document).ready(function() {
+
+$('.kuma').click(function(){
+    
+    $('p#woah').fadeIn();
+    
+}); 
+      
+$('.lilo').click(function(){
+    $('p#hidden').fadeTo(10000,0.9);
+    
+});
+      
+$('.chewy').click(function(){
+    $('img').fadeToggle();
+    
+});     //close click function
+      
+
+
+    
+
+  }); //close .ready()
+</script>
+  
+  
+  
+
+</body>
+	
+</html> 
