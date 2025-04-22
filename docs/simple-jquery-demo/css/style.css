@@ -44,6 +44,13 @@ p {
    
 }
 
+img{
+    margin: auto;
+    max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 button{
     font-family: "adso", sans-serif;
     font-weight: 400;
@@ -58,6 +65,12 @@ h2{
     cursor: pointer;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
 @media (min-width: 1024px) {
   .container {
