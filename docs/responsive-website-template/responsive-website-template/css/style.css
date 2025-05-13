@@ -3,48 +3,103 @@ html, body {
 	margin:0px;
 	padding:0px;
 	height:100%;
+    width: 100%;
     font-size: 1em;
     line-height: 1.4em;
+    box-sizing: border-box;
 
 }
 
-body {
-	background-color: #7dc5c9;
-	background: url("image/clouds.gif") center center fixed no-repeat;
-	background-size: cover;
+
+#top-section {
+    background-color: #7dc5c9;
 }
 
-header{
+#main-background {
+    background: url("../image/clouds.gif") center center fixed no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+
+}
+
+#logo {
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+h1{
     color: #ffffff;
+    font-size: 3em;
     text-align: center;
+    font-family: "pinecone-mvb", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#why {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#chewy{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    transform: translate(0%, 600%);
 }
 
 hr{
-  border-bottom: 5px solid #ffffff;
+  border: none;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 0;
 }
+
 
 .content-flex {
-  display: flex;
+  
   flex-direction: row;
   align-items: flex-start;
-  flex-wrap: wrap; /* Allows wrapping on small screens */
-  padding: 20px;
+  flex-wrap: wrap; 
+    max-width: 100%;
+    margin: 2.5%;
+    display: flex;
+    column-gap: 100px;
 }
-
-.text-column, .video-column {
-  flex: 1 1 50%;
+.text-column, .video-column, .picture-column {
+  flex: 1;
   min-width: 300px;
   box-sizing: border-box;
+margin-top: 20px;
+
 }
 
+
+.video-column {
+    flex: 1 1 50%;
+    margin-top:80px;
+    min-width: 600px;
+    max-width: 1000px;
+    box-sizing: border-box;
+   
+    
+}
 .video-column iframe{
     width: 100%;
     height: auto;
 }
 
-.video-wrapper {
+.video-wrapper { 
   position: relative;
   width: 100%;
+    max-width: 100%;
   padding-bottom: 56.25%; 
   height: 0;
   overflow: hidden;
@@ -56,17 +111,82 @@ hr{
   left: 0;
   width: 100%;
   height: 100%;
-}
-main p {
-    color: #ffffff;
-    font-family: "bahnschrift", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    width: 500px;
-    padding: 10px 10px 24px;
+    border: none;
 }
 
-button {
+.journal-text-column, .journal-picture-column {
+  flex: 1;
+  min-width: 300px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+#journal-pic {
+  position: relative;
+  height: 50%;
+  width: 50%;
+  top: 50%;
+  left: 25%;
+}
+.products-pic-text-columns {
+  flex: 1;
+  display: grid;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-template-columns: auto auto;
+  min-width: 300px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.products-pic-text-columns img {
+    width: 20rem ;
+    height: 20rem ;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.picture-column {
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.picture-column img {
+    width: 15rem ;
+    height: 30rem ;
+    object-fit: cover;
+  display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#shift {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: "bahnschrift", sans-serif;
+  font-size: 1.5em;
+  z-index: 10; 
+
+}
+
+main p{
+    font-family: "bahnschrift", sans-serif;
+    color: #ffffff;
+    font-size: 2.5vmin;
+
+    
+}
+
+#dreamer {
     background-color: transparent;
     border: 2px solid #ffffff;
     border-radius: 5px;
@@ -87,6 +207,8 @@ button:hover {
     background-color: #cfcecc;
 }
 
+
+  
 ul{
     list-style: none;
     padding-left: 0px;
@@ -119,12 +241,57 @@ a:hover {
     color: black;
 }
 
-img{
-    width: 100%;
-}
+
 
 figcaption, footer{
-    font-size: 0.5em;
+    font-size: 1em;
+    color: #ffffff;
+    font-family: "pinecone-mvb", sans-serif;
+}
+
+figcaption {
+    text-align: center;
+}
+footer{
+    margin-left: 10px;
+}
+
+#woah{
+    color: #787474;
+}
+.izzy{
+    background: none;                  
+  border: none;
+    text-decoration: underline;
+  color: #ffffff;                    
+  font-size: 2.5vmin;  
+  font-family: "bahnschrift", sans-serif; 
+  text-align: left;                   
+  cursor: pointer;                  
+  padding: 0;                   
+  display: block;                     
+  margin-bottom: 10px;
+    position: left;
+
+}
+#money{
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: #ab7dc6;
+    font-size: 5em;
+    font-family: "pinecone-mvb", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 75%);
+    padding: 10px 20px;
+    
+}
+#donate-content{
+  margin-top: 100px;
 }
 
 
@@ -162,6 +329,8 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
   .text-column, .video-column {
     width: 100%;
+      margin-bottom: 20px;
+      margin-left: 20px;
   }
     .video-column iframe {
         width: 100%;
